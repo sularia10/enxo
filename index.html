@@ -24,14 +24,22 @@
     <button id="btn-orientacion">Cambiar Orientación</button>
   </div>
 
+  <h3>Gestión de Partidas</h3>
+  <div id="gestion-partidas">
+    <button id="btnGuardar">Guardar Partida</button>
+    <button id="btnCargar">Cargar Partida</button>
+    <button id="btnListarPartidas">Ver Partidas</button>
+  </div>
+  <div id="listaPartidas"></div>
+
   <button id="btnJugar" disabled>¡Jugar!</button>
-  <button id="btnGuardarPartida">Guardar Partida</button>
-  <button id="btnCargarPartida">Cargar Partida</button>
 
   <h3>Disparar</h3>
   <form id="disparoForm" style="display:none;">
-    X: <input type="number" id="x" min="0" max="9" required>
-    Y: <input type="number" id="y" min="0" max="9" required>
+    <label for="x">X: </label>
+    <input type="number" id="x" min="0" max="9" required>
+    <label for="y">Y: </label>
+    <input type="number" id="y" min="0" max="9" required>
     <button type="submit">Disparar</button>
   </form>
 

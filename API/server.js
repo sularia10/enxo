@@ -7,7 +7,7 @@ const PORT = 3000;
 
 app.use(cors());
 app.use(express.json());
-app.use('/partidas', partidasRoutes);
+app.use('/api/partidas', partidasRoutes);
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
